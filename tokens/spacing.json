@@ -1,0 +1,70 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$version": "1.0",
+  "$description": "Gensyn Design spacing, radius, shadow, motion, and layout tokens — July 2026",
+
+  "space": {
+    "1":  { "$value": "4px",  "$type": "dimension" },
+    "2":  { "$value": "8px",  "$type": "dimension" },
+    "3":  { "$value": "12px", "$type": "dimension" },
+    "4":  { "$value": "16px", "$type": "dimension" },
+    "5":  { "$value": "20px", "$type": "dimension" },
+    "6":  { "$value": "24px", "$type": "dimension" },
+    "8":  { "$value": "32px", "$type": "dimension" },
+    "10": { "$value": "40px", "$type": "dimension" },
+    "12": { "$value": "48px", "$type": "dimension" },
+    "16": { "$value": "64px", "$type": "dimension" },
+    "20": { "$value": "80px", "$type": "dimension" },
+    "24": { "$value": "96px", "$type": "dimension" },
+    "32": { "$value": "128px", "$type": "dimension" }
+  },
+
+  "radius": {
+    "sm":   { "$value": "4px",   "$type": "dimension" },
+    "md":   { "$value": "8px",   "$type": "dimension" },
+    "lg":   { "$value": "14px",  "$type": "dimension" },
+    "xl":   { "$value": "22px",  "$type": "dimension" },
+    "full": { "$value": "999px", "$type": "dimension", "$description": "Pill shape — use sparingly" }
+  },
+
+  "shadow": {
+    "sm": {
+      "$value": "0 1px 2px rgba(4, 36, 119, 0.06)",
+      "$type": "shadow",
+      "$description": "Subtle blue-tinted shadow"
+    },
+    "md": {
+      "$value": "0 4px 16px rgba(4, 36, 119, 0.10)",
+      "$type": "shadow"
+    },
+    "lg": {
+      "$value": "0 12px 32px rgba(4, 36, 119, 0.14)",
+      "$type": "shadow"
+    }
+  },
+
+  "border": {
+    "thin":   { "$value": "1px solid {color.semantic.border-subtle}", "$type": "border" },
+    "strong": { "$value": "1px solid {color.semantic.border-strong}", "$type": "border" }
+  },
+
+  "motion": {
+    "ease": {
+      "standard": {
+        "$value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "$type": "cubicBezier",
+        "$description": "Calm and deliberate — no bounce. Reflects a facilitation brand."
+      }
+    },
+    "duration": {
+      "fast":  { "$value": "120ms", "$type": "duration" },
+      "base":  { "$value": "200ms", "$type": "duration" },
+      "slow":  { "$value": "340ms", "$type": "duration" }
+    }
+  },
+
+  "layout": {
+    "content-max-width":  { "$value": "1180px", "$type": "dimension" },
+    "container-padding":  { "$value": "{space.6}",  "$type": "dimension" }
+  }
+}

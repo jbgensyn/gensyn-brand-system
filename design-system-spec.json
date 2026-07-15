@@ -1,0 +1,39 @@
+{
+  "name": "Gensyn Design System",
+  "version": "1.0.0",
+  "description": "Brand tokens, component specs, and logo assets for all Gensyn Design projects",
+  "updated": "2026-07",
+  "tokens": {
+    "colors":     "./tokens/colors.json",
+    "typography": "./tokens/typography.json",
+    "spacing":    "./tokens/spacing.json"
+  },
+  "components": [
+    "./components/buttons.md",
+    "./components/cards.md",
+    "./components/forms.md",
+    "./components/badges.md"
+  ],
+  "assets": {
+    "logo": {
+      "primary":    "./assets/logo/gensyn-logo.svg",
+      "black":      "./assets/logo/gensyn-logo-black.svg",
+      "white":      "./assets/logo/gensyn-logo-white.svg",
+      "full":       "./assets/logo/gensyn-logo-full.svg",
+      "mark":       "./assets/logo/gensyn-logo-mark.svg",
+      "mark-black": "./assets/logo/gensyn-logo-mark-black.svg",
+      "mark-white": "./assets/logo/gensyn-logo-mark-white.svg",
+      "exports": {
+        "h60":      "./assets/logo/exports/gensyn-logo-h60.png",
+        "h240":     "./assets/logo/exports/gensyn-logo-h240.png",
+        "h600":     "./assets/logo/exports/gensyn-logo-h600.png",
+        "mark-16":  "./assets/logo/exports/gensyn-logo-mark-16.png",
+        "mark-32":  "./assets/logo/exports/gensyn-logo-mark-32.png",
+        "mark-192": "./assets/logo/exports/gensyn-logo-mark-192.png",
+        "mark-512": "./assets/logo/exports/gensyn-logo-mark-512.png"
+      }
+    },
+    "source": "./assets/source/gensyn-logo.ai"
+  },
+  "skill": "./SKILL.md"
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$version": "1.0",
+  "$description": "Gensyn Design color tokens — July 2026",
+
+  "color": {
+    "brand": {
+      "blue":         { "$value": "#042477", "$type": "color", "$description": "Resolution Blue — primary brand color" },
+      "blue-light":   { "$value": "#274A9E", "$type": "color" },
+      "blue-dark":    { "$value": "#021845", "$type": "color" },
+      "blue-tint-10": { "$value": "color-mix(in oklch, #042477 10%, white)", "$type": "color", "$description": "10% blue tint for subtle backgrounds" },
+      "purple":       { "$value": "#743494", "$type": "color", "$description": "Design Purple — secondary brand color" },
+      "purple-light": { "$value": "#8E52AC", "$type": "color" },
+      "purple-dark":  { "$value": "#52246C", "$type": "color" },
+      "purple-tint-10": { "$value": "color-mix(in oklch, #743494 10%, white)", "$type": "color" }
+    },
+    "accent": {
+      "linen":       { "$value": "#F8F5F0", "$type": "color", "$description": "Page background — non-print media" },
+      "orange":      { "$value": "#FFA630", "$type": "color", "$description": "Orange Peel — accent and focus ring" },
+      "orange-dark": { "$value": "#E08F1B", "$type": "color" },
+      "green":       { "$value": "#0D714B", "$type": "color", "$description": "Dark Spring Green — accent" },
+      "green-dark":  { "$value": "#095A3B", "$type": "color" }
+    },
+    "neutral": {
+      "900": { "$value": "#1D1D1F", "$type": "color" },
+      "800": { "$value": "#313132", "$type": "color", "$description": "Dark gray — text and dark alt, never pure black" },
+      "600": { "$value": "#5B5B5D", "$type": "color" },
+      "400": { "$value": "#8E8E90", "$type": "color" },
+      "200": { "$value": "#D8D5CE", "$type": "color" },
+      "100": { "$value": "#EFECE5", "$type": "color" },
+      "0":   { "$value": "#F8F5F0", "$type": "color", "$description": "Linen — lightest neutral, page background" }
+    },
+    "white": { "$value": "#FFFFFF", "$type": "color", "$description": "White — for surfaces atop color only, not page background" },
+    "category": {
+      "benefits":     { "$value": "#C23B6B", "$type": "color", "$description": "Strategic planning artifact — benefits" },
+      "issues":       { "$value": "#042477", "$type": "color", "$description": "Strategic planning artifact — issues (brand blue)" },
+      "opportunities": { "$value": "#0D714B", "$type": "color", "$description": "Strategic planning artifact — opportunities (brand green)" },
+      "operations":   { "$value": "#FFA630", "$type": "color", "$description": "Strategic planning artifact — operations (brand orange)" }
+    },
+    "semantic": {
+      "bg-page":            { "$value": "{color.neutral.0}",   "$type": "color" },
+      "bg-surface":         { "$value": "{color.white}",        "$type": "color" },
+      "bg-inverse":         { "$value": "{color.brand.blue}",   "$type": "color" },
+      "text-primary":       { "$value": "{color.neutral.800}",  "$type": "color" },
+      "text-secondary":     { "$value": "{color.neutral.600}",  "$type": "color" },
+      "text-inverse":       { "$value": "{color.white}",        "$type": "color" },
+      "text-on-linen-muted": { "$value": "#6B6864",             "$type": "color" },
+      "brand-primary":      { "$value": "{color.brand.blue}",   "$type": "color" },
+      "brand-primary-hover": { "$value": "{color.brand.blue-dark}", "$type": "color" },
+      "brand-secondary":    { "$value": "{color.brand.purple}", "$type": "color" },
+      "brand-secondary-hover": { "$value": "{color.brand.purple-dark}", "$type": "color" },
+      "accent-orange":      { "$value": "{color.accent.orange}", "$type": "color" },
+      "accent-green":       { "$value": "{color.accent.green}", "$type": "color" },
+      "border-subtle":      { "$value": "{color.neutral.200}", "$type": "color" },
+      "border-strong":      { "$value": "{color.neutral.400}", "$type": "color" },
+      "focus-ring":         { "$value": "{color.accent.orange}", "$type": "color" }
+    }
+  }
+}
