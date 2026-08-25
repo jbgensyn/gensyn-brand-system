@@ -1,0 +1,37 @@
+{
+  "name": "gensyn-brand-system",
+  "version": "1.2.0",
+  "description": "Brand tokens, component specs, logo assets, and generated CSS for Gensyn Design.",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbgensyn/gensyn-brand-system.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build:css": "node scripts/build-css.mjs",
+    "verify": "npm run build:css && git diff --exit-code css/gensyn-tokens.css"
+  },
+  "main": "./design-system-spec.json",
+  "exports": {
+    ".": "./design-system-spec.json",
+    "./tokens.css": "./css/gensyn-tokens.css",
+    "./base.css": "./css/gensyn-base.css",
+    "./tokens/*.json": "./tokens/*.json",
+    "./logo/*": "./assets/logo/*",
+    "./skill": "./SKILL.md"
+  },
+  "files": [
+    "css",
+    "tokens",
+    "components",
+    "assets",
+    "scripts",
+    "design-system-spec.json",
+    "SKILL.md"
+  ]
+}

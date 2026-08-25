@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gensyn Brand Palette v1.2</title>
+<link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;700&family=Noto+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --gensyn-navy:#263171; --gensyn-navy-light:#515A8D; --gensyn-navy-dark:#1E2759; --gensyn-navy-accent:#CDD4FD;
+    --gensyn-purple:#743694; --gensyn-purple-light:#905EA9; --gensyn-purple-dark:#5D2B76; --gensyn-purple-accent:#DDC3EA;
+    --gensyn-linen:#F8F5F0; --gensyn-dark-gray:#313132; --gensyn-orange:#FFA630; --gensyn-green:#0D714B;
+    --gensyn-green-dark:#095A3B; --color-warning:#7A4A08;
+  }
+  body{margin:0;padding:64px 24px;background:var(--gensyn-linen);font-family:'Enriqueta',Georgia,serif;color:var(--gensyn-dark-gray)}
+  .wrap{max-width:1180px;margin:0 auto}
+  h1{font-family:'Noto Sans',system-ui,sans-serif;font-weight:800;font-size:42px;color:var(--gensyn-navy);margin:0 0 8px;letter-spacing:-.01em}
+  .sub{font-size:17px;color:#6B6864;margin:0 0 48px}
+  h2{font-family:'Noto Sans',system-ui,sans-serif;font-weight:700;font-size:20px;color:var(--gensyn-navy);margin:48px 0 16px;text-transform:uppercase;letter-spacing:.06em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+  .sw{border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 4px 16px rgba(38,49,113,.10)}
+  .chip{height:104px;display:flex;align-items:flex-end;padding:12px;font-family:'Noto Sans',sans-serif;font-size:13px;font-weight:700}
+  .meta{padding:12px 14px 16px}
+  .nm{font-family:'Noto Sans',sans-serif;font-weight:700;font-size:15px;display:block}
+  .hx{font-size:13px;color:#5B5B5D;letter-spacing:.04em}
+  .role{font-size:13px;color:#6B6864;margin-top:6px;display:block;line-height:1.45}
+  .pairs{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+  .pair{border-radius:14px;padding:20px 22px;font-size:17px;line-height:1.55}
+  .pair b{font-family:'Noto Sans',sans-serif;display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px;opacity:.85}
+  .ratio{font-family:'Noto Sans',sans-serif;font-size:13px;opacity:.8;display:block;margin-top:8px}
+  .note{background:#fff;border-left:3px solid var(--gensyn-orange);border-radius:0 8px 8px 0;padding:16px 20px;font-size:15px;line-height:1.6;margin-top:16px}
+  .rule{background:#fff;border-left:3px solid var(--gensyn-navy);border-radius:0 8px 8px 0;padding:18px 22px;font-size:16px;line-height:1.6;margin:16px 0 0}
+  .rule b{font-family:'Noto Sans',sans-serif;font-size:15px}
+  .bad{text-decoration:line-through;opacity:.75}
+</style>
+</head>
+<body><div class="wrap">
+<h1>Gensyn Brand Palette</h1>
+<p class="sub">Version 1.2 &middot; August 2026 &middot; corrected against approved June 2025 logo artwork</p>
+
+<h2>Primary</h2>
+<div class="grid">
+  <div class="sw"><div class="chip" style="background:#263171;color:#fff">PRIMARY / DEFAULT</div><div class="meta"><span class="nm">Gensyn Navy</span><span class="hx">#263171</span><span class="role">Headings, primary actions, inverse backgrounds</span></div></div>
+  <div class="sw"><div class="chip" style="background:#743694;color:#fff">SECONDARY</div><div class="meta"><span class="nm">Design Purple</span><span class="hx">#743694</span><span class="role">Secondary actions, section labels, accents</span></div></div>
+</div>
+
+<h2>Brand Accents</h2>
+<div class="grid">
+  <div class="sw"><div class="chip" style="background:#CDD4FD;color:#263171">NAVY DERIVED</div><div class="meta"><span class="nm">Navy Accent</span><span class="hx">#CDD4FD</span><span class="role">Tinted backgrounds, selected states, badge fills</span></div></div>
+  <div class="sw"><div class="chip" style="background:#DDC3EA;color:#5D2B76">PURPLE DERIVED</div><div class="meta"><span class="nm">Purple Accent</span><span class="hx">#DDC3EA</span><span class="role">Tinted backgrounds, section highlights</span></div></div>
+</div>
+
+<h2>Supporting</h2>
+<div class="grid">
+  <div class="sw"><div class="chip" style="background:#F8F5F0;color:#313132;border-bottom:1px solid #D8D5CE">LIGHT BG</div><div class="meta"><span class="nm">Linen</span><span class="hx">#F8F5F0</span><span class="role">Light backgrounds, page background</span></div></div>
+  <div class="sw"><div class="chip" style="background:#313132;color:#F8F5F0">DARK BG</div><div class="meta"><span class="nm">Dark Gray</span><span class="hx">#313132</span><span class="role">Dark backgrounds and primary text</span></div></div>
+  <div class="sw"><div class="chip" style="background:#FFA630;color:#313132">COMPLEMENTARY</div><div class="meta"><span class="nm">Orange Peel</span><span class="hx">#FFA630</span><span class="role">Graphics, icons, fills, backgrounds &mdash; never text</span></div></div>
+  <div class="sw"><div class="chip" style="background:#0D714B;color:#fff">COMPLEMENTARY</div><div class="meta"><span class="nm">Dark Spring Green</span><span class="hx">#0D714B</span><span class="role">Graphics, icons, fills, backgrounds &mdash; never text</span></div></div>
+</div>
+
+<div class="rule">
+  <b>The complementary colors are graphics colors, not text colors.</b><br>
+  Use them for icons, fills, borders, focus rings, chart marks, and background areas. Never set type in Orange Peel or Dark Spring Green, at any size or weight. Where words must carry the hue, use the darkened form below.
+</div>
+
+<h2>Text-Safe Forms</h2>
+<div class="grid">
+  <div class="sw"><div class="chip" style="background:#7A4A08;color:#fff">TEXT-SAFE ORANGE</div><div class="meta"><span class="nm">Warning</span><span class="hx">#7A4A08</span><span class="role">Words that must read as orange. 6.9:1 on linen.</span></div></div>
+  <div class="sw"><div class="chip" style="background:#095A3B;color:#fff">TEXT-SAFE GREEN</div><div class="meta"><span class="nm">Green Dark</span><span class="hx">#095A3B</span><span class="role">Words that must read as green. 7.6:1 on linen.</span></div></div>
+</div>
+
+<h2>Derived Tints &amp; Shades</h2>
+<div class="grid">
+  <div class="sw"><div class="chip" style="background:#515A8D;color:#fff">INACTIVE</div><div class="meta"><span class="nm">Navy Light</span><span class="hx">#515A8D</span><span class="role">Disabled and inactive navy states</span></div></div>
+  <div class="sw"><div class="chip" style="background:#1E2759;color:#fff">HOVER</div><div class="meta"><span class="nm">Navy Dark</span><span class="hx">#1E2759</span><span class="role">Hover and pressed states</span></div></div>
+  <div class="sw"><div class="chip" style="background:#905EA9;color:#fff">INACTIVE</div><div class="meta"><span class="nm">Purple Light</span><span class="hx">#905EA9</span><span class="role">Disabled and inactive purple states</span></div></div>
+  <div class="sw"><div class="chip" style="background:#5D2B76;color:#fff">HOVER</div><div class="meta"><span class="nm">Purple Dark</span><span class="hx">#5D2B76</span><span class="role">Hover and pressed states</span></div></div>
+</div>
+
+<h2>Data Visualization</h2>
+<div class="grid">
+  <div class="sw"><div class="chip" style="background:linear-gradient(90deg,#263171 0 16.6%,#743694 16.6% 33.3%,#0D714B 33.3% 50%,#FFA630 50% 66.6%,#C23B6B 66.6% 83.3%,#905EA9 83.3%)"></div><div class="meta"><span class="nm">Categorical</span><span class="hx">--chart-series-1 … -6</span><span class="role">Unordered dimensions. Use in order; group beyond six.</span></div></div>
+  <div class="sw"><div class="chip" style="background:linear-gradient(90deg,#CDD4FD 0 20%,#939BCC 20% 40%,#606AA2 40% 60%,#263171 60% 80%,#1E2759 80%)"></div><div class="meta"><span class="nm">Sequential</span><span class="hx">--chart-seq-1 … -5</span><span class="role">Ordered magnitude. Steps 1&ndash;2 are fill-only.</span></div></div>
+  <div class="sw"><div class="chip" style="background:linear-gradient(90deg,#EC9126 0 20%,#FCCA86 20% 40%,#E8E5DF 40% 60%,#8EBAA6 60% 80%,#0D714B 80%)"></div><div class="meta"><span class="nm">Diverging</span><span class="hx">--chart-div-1 … -5</span><span class="role">Needs attention &rarr; neutral &rarr; strength</span></div></div>
+</div>
+
+<h2>Contrast Check</h2>
+<div class="pairs">
+  <div class="pair" style="background:#F8F5F0;color:#263171;border:1px solid #D8D5CE"><b>Navy on Linen</b>Facilitation that holds up.<span class="ratio">10.97:1 &middot; AAA</span></div>
+  <div class="pair" style="background:#263171;color:#fff"><b>White on Navy</b>Facilitation that holds up.<span class="ratio">11.93:1 &middot; AAA</span></div>
+  <div class="pair" style="background:#F8F5F0;color:#743694;border:1px solid #D8D5CE"><b>Purple on Linen</b>Facilitation that holds up.<span class="ratio">7.16:1 &middot; AAA</span></div>
+  <div class="pair" style="background:#CDD4FD;color:#263171"><b>Navy on Navy Accent</b>Facilitation that holds up.<span class="ratio">8.20:1 &middot; AAA</span></div>
+  <div class="pair" style="background:#DDC3EA;color:#743694"><b>Purple on Purple Accent</b>Facilitation that holds up.<span class="ratio">4.84:1 &middot; AA only</span></div>
+  <div class="pair" style="background:#DDC3EA;color:#263171"><b>Navy on Purple Accent</b>Facilitation that holds up.<span class="ratio">7.42:1 &middot; AAA &mdash; preferred</span></div>
+  <div class="pair" style="background:#F8F5F0;color:#7A4A08;border:1px solid #D8D5CE"><b>Warning on Linen</b>Facilitation that holds up.<span class="ratio">6.87:1 &middot; AAA &mdash; the text-safe orange</span></div>
+  <div class="pair" style="background:#F8F5F0;color:#095A3B;border:1px solid #D8D5CE"><b>Green Dark on Linen</b>Facilitation that holds up.<span class="ratio">7.61:1 &middot; AAA &mdash; the text-safe green</span></div>
+  <div class="pair" style="background:#F8F5F0;color:#FFA630;border:1px solid #D8D5CE"><b>Orange Peel on Linen</b><span class="bad">Facilitation that holds up.</span><span class="ratio">1.80:1 &middot; FAILS at every size</span></div>
+  <div class="pair" style="background:#F8F5F0;color:#0D714B;border:1px solid #D8D5CE"><b>Dark Spring Green on Linen</b><span class="bad">Facilitation that holds up.</span><span class="ratio">5.55:1 &middot; passes, but reserved as graphics</span></div>
+</div>
+<div class="note">The last two pairs are shown struck through because they are not permitted as text, whatever their measured ratio. Orange Peel genuinely fails; Dark Spring Green passes but follows the same rule so the two complementary colors behave alike.</div>
+</div></body></html>

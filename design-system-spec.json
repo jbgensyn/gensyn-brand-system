@@ -1,18 +1,25 @@
 {
   "name": "Gensyn Design System",
-  "version": "1.0.0",
-  "description": "Brand tokens, component specs, and logo assets for all Gensyn Design projects",
-  "updated": "2026-07",
+  "version": "1.2.0",
+  "description": "Brand tokens, component specs, logo assets, and generated CSS for all Gensyn Design projects. v1.1 corrected the primary brand colors to match the approved June 2025 logo artwork; v1.2 adds chart and state tokens and makes the system consumable as generated CSS.",
+  "updated": "2026-08",
   "tokens": {
     "colors":     "./tokens/colors.json",
     "typography": "./tokens/typography.json",
-    "spacing":    "./tokens/spacing.json"
+    "spacing":    "./tokens/spacing.json",
+    "charts":     "./tokens/charts.json",
+    "states":     "./tokens/states.json"
   },
   "components": [
     "./components/buttons.md",
     "./components/cards.md",
     "./components/forms.md",
-    "./components/badges.md"
+    "./components/badges.md",
+    "./components/progress.md",
+    "./components/options.md",
+    "./components/labels.md",
+    "./components/feedback.md",
+    "./components/charts.md"
   ],
   "assets": {
     "logo": {
@@ -34,6 +41,11 @@
       }
     },
     "source": "./assets/source/gensyn-logo.ai"
+  },
+  "css": {
+    "tokens": "./css/gensyn-tokens.css",
+    "base":   "./css/gensyn-base.css",
+    "build":  "node scripts/build-css.mjs"
   },
   "skill": "./SKILL.md"
 }

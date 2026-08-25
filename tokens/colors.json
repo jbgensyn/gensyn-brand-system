@@ -1,29 +1,30 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$version": "1.0",
-  "$description": "Gensyn Design color tokens — July 2026",
+  "$version": "1.2",
+  "$description": "Gensyn Design color tokens — August 2026. Primary brand values corrected to match the approved June 2025 logo artwork.",
 
   "color": {
     "brand": {
-      "blue":         { "$value": "#042477", "$type": "color", "$description": "Resolution Blue — primary brand color" },
-      "blue-light":   { "$value": "#274A9E", "$type": "color" },
-      "blue-dark":    { "$value": "#021845", "$type": "color" },
-      "blue-tint-10": { "$value": "color-mix(in oklch, #042477 10%, white)", "$type": "color", "$description": "10% blue tint for subtle backgrounds" },
-      "purple":       { "$value": "#743494", "$type": "color", "$description": "Design Purple — secondary brand color" },
-      "purple-light": { "$value": "#8E52AC", "$type": "color" },
-      "purple-dark":  { "$value": "#52246C", "$type": "color" },
-      "purple-tint-10": { "$value": "color-mix(in oklch, #743494 10%, white)", "$type": "color" }
+      "navy":         { "$value": "#263171", "$type": "color", "$description": "Gensyn Navy — primary brand color and default. Matches approved logo artwork." },
+      "navy-light":   { "$value": "#515A8D", "$type": "color", "$description": "Navy lightened 20% — disabled/inactive navy states" },
+      "navy-dark":    { "$value": "#1E2759", "$type": "color", "$description": "Navy darkened 20% — hover and pressed states" },
+      "navy-accent":  { "$value": "#CDD4FD", "$type": "color", "$description": "Navy-derived accent — tinted backgrounds, selected states, badge fills" },
+      "purple":       { "$value": "#743694", "$type": "color", "$description": "Design Purple — secondary brand color. Matches approved logo artwork." },
+      "purple-light": { "$value": "#905EA9", "$type": "color", "$description": "Purple lightened 20% — disabled/inactive purple states" },
+      "purple-dark":  { "$value": "#5D2B76", "$type": "color", "$description": "Purple darkened 20% — hover and pressed states" },
+      "purple-accent": { "$value": "#DDC3EA", "$type": "color", "$description": "Purple-derived accent — tinted backgrounds and section highlights" }
     },
     "accent": {
-      "linen":       { "$value": "#F8F5F0", "$type": "color", "$description": "Page background — non-print media" },
-      "orange":      { "$value": "#FFA630", "$type": "color", "$description": "Orange Peel — accent and focus ring" },
-      "orange-dark": { "$value": "#E08F1B", "$type": "color" },
-      "green":       { "$value": "#0D714B", "$type": "color", "$description": "Dark Spring Green — accent" },
-      "green-dark":  { "$value": "#095A3B", "$type": "color" }
+      "linen":       { "$value": "#F8F5F0", "$type": "color", "$description": "Linen — light backgrounds, page background for non-print media" },
+      "dark-gray":   { "$value": "#313132", "$type": "color", "$description": "Dark Gray — dark backgrounds and primary text; never pure black" },
+      "orange":      { "$value": "#FFA630", "$type": "color", "$description": "Orange Peel — complementary. Graphics, icons, fills, borders, and background areas only. Never text at any size (1.8:1 on linen)." },
+      "orange-dark": { "$value": "#E08F1B", "$type": "color", "$description": "Orange Peel darkened — hover state for orange fills. Still not a text color (2.4:1 on linen)." },
+      "green":       { "$value": "#0D714B", "$type": "color", "$description": "Dark Spring Green — complementary. Graphics, icons, fills, borders, and background areas only. Contrast-safe at 5.6:1, but reserved as a graphics color for consistency with Orange Peel." },
+      "green-dark":  { "$value": "#095A3B", "$type": "color", "$description": "Dark Spring Green darkened — hover state for green fills, and the text-safe green where words must be green (7.6:1 on linen)." }
     },
     "neutral": {
       "900": { "$value": "#1D1D1F", "$type": "color" },
-      "800": { "$value": "#313132", "$type": "color", "$description": "Dark gray — text and dark alt, never pure black" },
+      "800": { "$value": "#313132", "$type": "color", "$description": "Dark Gray — brand neutral, text and dark backgrounds" },
       "600": { "$value": "#5B5B5D", "$type": "color" },
       "400": { "$value": "#8E8E90", "$type": "color" },
       "200": { "$value": "#D8D5CE", "$type": "color" },
@@ -32,21 +33,23 @@
     },
     "white": { "$value": "#FFFFFF", "$type": "color", "$description": "White — for surfaces atop color only, not page background" },
     "category": {
-      "benefits":     { "$value": "#C23B6B", "$type": "color", "$description": "Strategic planning artifact — benefits" },
-      "issues":       { "$value": "#042477", "$type": "color", "$description": "Strategic planning artifact — issues (brand blue)" },
-      "opportunities": { "$value": "#0D714B", "$type": "color", "$description": "Strategic planning artifact — opportunities (brand green)" },
-      "operations":   { "$value": "#FFA630", "$type": "color", "$description": "Strategic planning artifact — operations (brand orange)" }
+      "benefits":      { "$value": "#C23B6B", "$type": "color", "$description": "Strategic planning artifact — benefits" },
+      "issues":        { "$value": "#263171", "$type": "color", "$description": "Strategic planning artifact — issues (Gensyn Navy)" },
+      "opportunities": { "$value": "#0D714B", "$type": "color", "$description": "Strategic planning artifact — opportunities (Dark Spring Green)" },
+      "operations":    { "$value": "#FFA630", "$type": "color", "$description": "Strategic planning artifact — operations (Orange Peel)" }
     },
     "semantic": {
       "bg-page":            { "$value": "{color.neutral.0}",   "$type": "color" },
       "bg-surface":         { "$value": "{color.white}",        "$type": "color" },
-      "bg-inverse":         { "$value": "{color.brand.blue}",   "$type": "color" },
+      "bg-inverse":         { "$value": "{color.brand.navy}",   "$type": "color" },
+      "bg-accent-navy":     { "$value": "{color.brand.navy-accent}",   "$type": "color" },
+      "bg-accent-purple":   { "$value": "{color.brand.purple-accent}", "$type": "color" },
       "text-primary":       { "$value": "{color.neutral.800}",  "$type": "color" },
       "text-secondary":     { "$value": "{color.neutral.600}",  "$type": "color" },
       "text-inverse":       { "$value": "{color.white}",        "$type": "color" },
       "text-on-linen-muted": { "$value": "#6B6864",             "$type": "color" },
-      "brand-primary":      { "$value": "{color.brand.blue}",   "$type": "color" },
-      "brand-primary-hover": { "$value": "{color.brand.blue-dark}", "$type": "color" },
+      "brand-primary":      { "$value": "{color.brand.navy}",   "$type": "color" },
+      "brand-primary-hover": { "$value": "{color.brand.navy-dark}", "$type": "color" },
       "brand-secondary":    { "$value": "{color.brand.purple}", "$type": "color" },
       "brand-secondary-hover": { "$value": "{color.brand.purple-dark}", "$type": "color" },
       "accent-orange":      { "$value": "{color.accent.orange}", "$type": "color" },
@@ -55,5 +58,17 @@
       "border-strong":      { "$value": "{color.neutral.400}", "$type": "color" },
       "focus-ring":         { "$value": "{color.accent.orange}", "$type": "color" }
     }
+  },
+
+  "$deprecated": {
+    "$description": "Superseded in v1.1. Replace on sight; do not use in new work.",
+    "color.brand.blue":         { "was": "#042477", "replacedBy": "color.brand.navy (#263171)" },
+    "color.brand.blue-light":   { "was": "#274A9E", "replacedBy": "color.brand.navy-light (#515A8D)" },
+    "color.brand.blue-dark":    { "was": "#021845", "replacedBy": "color.brand.navy-dark (#1E2759)" },
+    "color.brand.blue-tint-10": { "was": "color-mix(in oklch, #042477 10%, white)", "replacedBy": "color.brand.navy-accent (#CDD4FD)" },
+    "color.brand.purple":       { "was": "#743494", "replacedBy": "color.brand.purple (#743694)" },
+    "color.brand.purple-light": { "was": "#8E52AC", "replacedBy": "color.brand.purple-light (#905EA9)" },
+    "color.brand.purple-dark":  { "was": "#52246C", "replacedBy": "color.brand.purple-dark (#5D2B76)" },
+    "color.brand.purple-tint-10": { "was": "color-mix(in oklch, #743494 10%, white)", "replacedBy": "color.brand.purple-accent (#DDC3EA)" }
   }
 }

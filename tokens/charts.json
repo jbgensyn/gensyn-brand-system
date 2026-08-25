@@ -1,0 +1,47 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$version": "1.2",
+  "$description": "Gensyn Design data visualization tokens — August 2026. For assessment output, radar charts, score bars, gauges, and any scored artifact.",
+
+  "chart": {
+    "series": {
+      "$description": "Categorical palette for unordered dimensions. Use in order; do not skip. Beyond six categories, group instead of adding colors.",
+      "1": { "$value": "{color.brand.navy}",   "$type": "color", "$description": "Gensyn Navy — first/primary series" },
+      "2": { "$value": "{color.brand.purple}", "$type": "color", "$description": "Design Purple" },
+      "3": { "$value": "{color.accent.green}", "$type": "color", "$description": "Dark Spring Green" },
+      "4": { "$value": "{color.accent.orange}", "$type": "color", "$description": "Orange Peel — fills and markers only, never as a label color" },
+      "5": { "$value": "#C23B6B", "$type": "color", "$description": "Rose — shared with the benefits category color" },
+      "6": { "$value": "{color.brand.purple-light}", "$type": "color", "$description": "Purple Light — sixth and final series color" }
+    },
+    "sequential": {
+      "$description": "Single-hue navy ramp for ordered intensity — heat, density, score magnitude. Steps 1–2 are background fills only; steps 3–5 carry enough contrast for marks and labels.",
+      "1": { "$value": "#CDD4FD", "$type": "color" },
+      "2": { "$value": "#939BCC", "$type": "color" },
+      "3": { "$value": "#606AA2", "$type": "color" },
+      "4": { "$value": "#263171", "$type": "color" },
+      "5": { "$value": "#1E2759", "$type": "color" }
+    },
+    "diverging": {
+      "$description": "Attention-to-strength ramp for gap-against-target and balance scoring. Orange end reads as needs attention, green end as strength, midpoint as neutral.",
+      "1": { "$value": "#EC9126", "$type": "color", "$description": "Low / needs attention" },
+      "2": { "$value": "#FCCA86", "$type": "color" },
+      "3": { "$value": "#E8E5DF", "$type": "color", "$description": "Neutral midpoint" },
+      "4": { "$value": "#8EBAA6", "$type": "color" },
+      "5": { "$value": "#0D714B", "$type": "color", "$description": "High / strength" }
+    },
+    "support": {
+      "grid":       { "$value": "{color.neutral.200}", "$type": "color", "$description": "Gridlines, polar rings, axis rules" },
+      "axis-label": { "$value": "{color.neutral.600}", "$type": "color", "$description": "Default axis and tick labels when not series-colored" },
+      "marker":     { "$value": "{color.accent.orange}", "$type": "color", "$description": "Point-of-interest markers, crosshairs, balance points" },
+      "marker-halo": { "$value": "{color.white}", "$type": "color", "$description": "Ring around markers so they read against any fill" },
+      "track":      { "$value": "{color.neutral.100}", "$type": "color", "$description": "Unfilled portion of score bars and progress tracks" }
+    },
+    "shape": {
+      "fill-opacity":   { "$value": 0.12, "$type": "number", "$description": "Area and radar fills — keep low so gridlines stay legible" },
+      "stroke-width":   { "$value": "2px", "$type": "dimension" },
+      "grid-width":     { "$value": "1px", "$type": "dimension" },
+      "marker-radius":  { "$value": "7px", "$type": "dimension" },
+      "marker-halo-width": { "$value": "2.5px", "$type": "dimension" }
+    }
+  }
+}

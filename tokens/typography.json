@@ -1,7 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$version": "1.0",
-  "$description": "Gensyn Design typography tokens — July 2026",
+  "$version": "1.2",
+  "$description": "Gensyn Design typography tokens — August 2026",
 
   "font": {
     "family": {

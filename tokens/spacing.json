@@ -1,7 +1,7 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$version": "1.0",
-  "$description": "Gensyn Design spacing, radius, shadow, motion, and layout tokens — July 2026",
+  "$version": "1.2",
+  "$description": "Gensyn Design spacing, radius, shadow, motion, and layout tokens — August 2026",
 
   "space": {
     "1":  { "$value": "4px",  "$type": "dimension" },
@@ -29,16 +29,16 @@
 
   "shadow": {
     "sm": {
-      "$value": "0 1px 2px rgba(4, 36, 119, 0.06)",
+      "$value": "0 1px 2px rgba(38, 49, 113, 0.06)",
       "$type": "shadow",
-      "$description": "Subtle blue-tinted shadow"
+      "$description": "Subtle navy-tinted shadow"
     },
     "md": {
-      "$value": "0 4px 16px rgba(4, 36, 119, 0.10)",
+      "$value": "0 4px 16px rgba(38, 49, 113, 0.10)",
       "$type": "shadow"
     },
     "lg": {
-      "$value": "0 12px 32px rgba(4, 36, 119, 0.14)",
+      "$value": "0 12px 32px rgba(38, 49, 113, 0.14)",
       "$type": "shadow"
     }
   },
@@ -63,8 +63,16 @@
     }
   },
 
+  "breakpoint": {
+    "sm": { "$value": "480px",  "$type": "dimension", "$description": "Phone" },
+    "md": { "$value": "768px",  "$type": "dimension", "$description": "Tablet — layouts collapse to single column at or below this" },
+    "lg": { "$value": "1024px", "$type": "dimension", "$description": "Small laptop" },
+    "xl": { "$value": "1280px", "$type": "dimension" }
+  },
+
   "layout": {
     "content-max-width":  { "$value": "1180px", "$type": "dimension" },
-    "container-padding":  { "$value": "{space.6}",  "$type": "dimension" }
+    "container-padding":  { "$value": "{space.6}",  "$type": "dimension" },
+    "container-padding-sm": { "$value": "{space.4}", "$type": "dimension", "$description": "Container padding at or below breakpoint.md" }
   }
 }
